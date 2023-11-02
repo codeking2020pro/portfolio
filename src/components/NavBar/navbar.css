@@ -1,0 +1,119 @@
+.navbar {
+    background: rgb(66, 65, 65);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    color: #fff;
+    border-radius: 10px 0;
+}
+.logo{
+    object-fit: contain;
+    height: 3rem;
+    width: 4rem;
+}
+.desktopMenuListItem{
+    margin: 1.5rem;
+    cursor: pointer;
+    font: 1em sans-serif;
+}
+.desktopMenuListItem:hover{
+    color: rgb(241, 241, 158);
+    /*border-bottom: 0.15rem solid yellow;*/
+}
+.desktopMenuBtn{
+    background: #fff;
+    color: rgb(40, 75, 5);
+    margin-top: 0.2rem;
+    border: solid 0.15rem rgb(44, 235, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.deskktopMenuImg{
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+}
+.active{
+    color: yellow;
+    border-bottom: 3px solid gray ;
+    padding-bottom: 0.3rem;
+}
+.mobMenu{
+    object-fit: cover;
+    height: 3rem;
+    display: none;
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height:fit-content;
+    min-width: 15rem;
+    background: rgb(66, 65, 65);
+    border-radius: 1rem;
+}
+.listItem{
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+@media screen and (max-width:625px) {
+   
+    .desktopMenuBtn{
+        display: none;
+    }    
+    .navbar{
+        width: 100%;
+        height: 4rem;
+    }
+    *{
+        box-sizing: content-box;
+        top: 0;
+    }
+    .desktopMenu{
+    margin-right: 1rem;
+    }
+}    
+
+@media screen and (max-width:525px) {
+    .desktopMenuBtn{
+        display: none;
+    }    
+    .navbar{
+        width: 100%;
+        height: 4rem;
+    }
+    *{
+        box-sizing: content-box;
+        top: 0;
+    }
+    .desktopMenu{
+    margin-right: 2rem;
+    }
+}    
+
+@media screen and (max-width:500px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu, .desktopMenuBtn{
+        display: none;
+    }
+}

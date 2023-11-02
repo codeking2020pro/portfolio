@@ -1,0 +1,151 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.introImg{
+    position: absolute;
+    top: -0.2rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 80vh;
+    margin-top: 40px;
+    display: flex;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 120px;
+}
+.greetings{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.introText{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: sans-serif;
+
+}
+.introName{
+    color: rgb(53, 53, 167);
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.introParagraph{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.1rem; 
+    padding-top: 5px;
+}
+.btn{
+    background: rgb(247, 246, 246);
+    margin: 1rem 0;
+    padding: 0.2rem 1.75rem;
+    border: solid 0.15rem rgb(44, 235, 225);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1.75rem;
+}
+
+@media screen and (max-width:840px) {
+    .introImg{
+        right: 33vw;
+    }
+    .introContent{
+        font-size: 10px;
+    }
+    .greetings{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:525px) {
+    .introImg{
+        right: 0;
+        position: absolute;
+        top: -0.2rem;
+        z-index: -1;
+        object-fit: cover;
+        height: 65vh;
+        margin-top: 70px;
+        display: flex;
+    }
+    .introContent{
+        margin-left: -15px;
+        margin-top: 60px;
+    }
+    .greetings{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .introImg{
+        right: 10vw;
+    }
+    .introContent{
+        font-size: 10px;
+    }
+    .greetings{
+        font-size: 4.5vw;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    #intro{
+        height: 150vh;
+        width: 213vw;
+        max-width: 75rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .introImg{
+        right: 35vw;
+        width: 160vw;
+        height: 110vh;
+    }
+    .introContent{
+        height: 100vh;
+        width: 100vh;
+        padding: 2rem;
+        font-size: 5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 210px;
+        margin-left: 35px;
+        color: #fff;
+    }
+    .greetings{
+        font-size: 2rem;
+        color: rgb(71, 74, 235);
+        padding-bottom: 15px;
+    }
+    .introName{
+        color: gold;
+    }
+    .introParagraph{
+        color: rgb(235, 71, 71);
+        padding-top: 15px;
+    }
+    
+}

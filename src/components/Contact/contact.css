@@ -1,0 +1,81 @@
+#contact{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-family: sans-serif, 'Arial Narrow', Arial;
+}
+.contactSectionTitle{
+    font-size: 2.5rem;
+    font-weight: 100;
+    padding-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-family: 'Franklin Gothic Medium';
+}
+.contactSectionDesc{
+    font-weight: 200;
+    font-size: 1.1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+    line-height: 1rem;
+}
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.3rem 0.5rem;
+    padding: 0.4rem 1rem;
+    color: white;
+    border: solid 0.15rem rgb(139, 240, 45);
+    border-radius: 0.5rem;
+    background: rgb(6, 53, 53);
+}
+.submitBtn{
+    font-size: medium;
+    background: white;
+    border: solid 0.15rem rgb(44, 235, 225);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.75rem 3.4rem;
+    cursor: pointer;
+}
+hr{
+    height: 1vh;
+    width: 100vw;
+    max-width: 40rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 1.5rem 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+a{
+    color: rgb(7, 248, 248);
+}
+#inboxME{
+    color: rgb(40, 75, 5);
+}
