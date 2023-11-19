@@ -10,15 +10,16 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_8xgrpi3', 'template_jsfkjdk', form.current, 'NzvbMlrD7VE8ziXkB9u8d')
+    emailjs.sendForm('service_ga4wrfp', 'template_jsfkjdk', form.current, 'rZ54kf1jQcvsrEhYG')
       .then((result) => {
           console.log(result.text);
-          e.target.reset();
           alert('Email sent');
       }, (error) => {
           console.log(error.text);
-      })
-  }
+      }
+    );
+    e.target.reset()
+  };
 
 
   return (
@@ -30,7 +31,7 @@ const Contact = () => {
               <input type='text' className='name' placeholder='Enter your name' name='your_name'></input>
               <input type='email' className='email' placeholder='Your email' name='your_email'></input>
               <textarea className='msg' name='message' rows={10} placeholder='Drop a Message'></textarea>
-              <button type='submit' value='send' className='submitBtn'>Submit</button>
+              <button type='submit' value='send' className='submitBtn'>Send Message</button>
               <div className='links'>
                 <img src={FacebookIcon} alt='' className='link' />
                 <img src={XIcon} alt='' className='link' />

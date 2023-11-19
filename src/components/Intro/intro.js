@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './intro.css';
 import introImg from '../../uwohos/My Pics/Pix2.jpg';
 import btnImg from '../../uwohos/hireMe.png';

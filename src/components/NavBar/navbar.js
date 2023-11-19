@@ -3,7 +3,7 @@ import './navbar.css';
 import logo from '../../uwohos/logo.png'
 import contactImg from '../../uwohos/contactmeans/inboxMe.png'
 import {Link} from 'react-scroll';
-import menu from '../../uwohos/harmburger-icons/harmburger-iconMUNO.jpg'
+import menu from '../../uwohos/harmburger-icons/harmburger-icon29f.png'
 
 
 const Navbar = () => {
